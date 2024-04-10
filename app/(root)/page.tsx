@@ -58,7 +58,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className='w-[300px]'>
-                  <Image src={data.img} width={300} height={300} alt='audio' style={{ objectFit: "cover" }} />
+                  <Image src={data.img} width={300} height={300} alt={data.name} style={{ objectFit: "cover" }} />
                 </div>
               </div>
             </CarouselItem>
@@ -68,13 +68,23 @@ export default function Home() {
           <CarouselNext />
         </Carousel>
       </section>
-      <section className='mt-5 flex justify-between items-center'>
+      <section >
+        <div className='mt-5 flex justify-between items-center'>
         <div>
           <h2 className='font-bold'>Let's Connect</h2>
           <p className='tracking-wide text-xs mt-2'>I'm currently looking for new opportunities, my inbox is always open.</p>
           <p className='tracking-wide text-xs'>Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
         </div>
         <span className='font-bold text-xs'>steve.braco@gmail.com</span>
+        </div>
+          <div className="flex space-x-2 mt-5">
+          <Link href='https://github.com/stevebraco'>
+          <Image src='/assets/github.png' width={24} height={24} alt="github" />
+        </Link>
+        <Link href='https://www.linkedin.com/in/stevebraco/'>
+          <Image src='/assets/linkedin.png' width={24} height={24} alt="github" />
+        </Link>
+          </div>
       </section>
     </main >
   );
