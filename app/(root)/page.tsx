@@ -9,6 +9,8 @@ import { Badge } from "@/components/ui/badge"
 import { dataProject } from "@/constans/project";
 import Image from "@/node_modules/next/image"
 import Link from "@/node_modules/next/link";
+import Projects from "@/components/projects/Projects";
+import Connect from "@/components/connect/Connect";
 export default function Home() {
   return (
     <main className='pb-10'>
@@ -24,43 +26,24 @@ export default function Home() {
           Here are a few technologies I've been working with recently:
         </p>
         <div className='flex space-x-[6rem] mt-5'>
-          <ul className='flex flex-col space-y-2 text-xs'>
+          <ul className='flex-column space-y-2 text-xs'>
             <li>JavaScript (ES6 +)</li>
             <li>React</li>
             <li>NextJs</li>
           </ul>
-          <ul className='flex flex-col space-y-2 text-xs'>
+          <ul className='flex-column space-y-2 text-xs'>
             <li>TypeScript</li>
             <li>Node.js/Express</li>
             <li>MongoDB</li>
           </ul>
         </div>
       </div>
-      <section className='mt-7 border-t border-[#F6F2F2] pt-4'>
+      <section className='divider'>
         <h2 className='font-bold'>Some Things I've Built</h2>
         <Carousel>
           <CarouselContent>
             {dataProject.map(data => <CarouselItem key={data.id}>
-              <div className='flex flex-col sm:flex-row space-y-5 lg:items-center justify-between mt-5'>
-                <div>
-                  <div>
-                    <h3 className='font-bold'>{data.name}</h3>
-                    <div className='flex gap-3 mt-1'>
-                      <Link className='text-xs text-gray-500' href={data.site}>View Site</Link>
-                      <Link className='text-xs text-gray-500' href={data.code}>Code</Link>
-                    </div>
-                  </div>
-                  <div className='sm:max-w-[400px] text-xs tracking-wide mt-3'>
-                    <p className='tracking-wide'>{data.description}</p>
-                  </div>
-                  <div className='flex flex-wrap gap-1 mt-2'>
-                    {data.stack.map(s => <Badge key={data.id} variant="outline">{s}</Badge>)}
-                  </div>
-                </div>
-                <div className='h-[300px]'>
-                  <Image src={data.img} width={300} height={300} alt={data.name} style={{ objectFit: "cover", width: '100%' }} />
-                </div>
-              </div>
+              <Projects data={data} />
             </CarouselItem>
             )}
           </CarouselContent>
@@ -68,24 +51,7 @@ export default function Home() {
           <CarouselNext className="hidden lg:inline-flex" />
         </Carousel>
       </section>
-      <section >
-        <div className='mt-5 flex flex-col lg:flex-row justify-between lg:items-center'>
-        <div>
-          <h2 className='font-bold'>Let's Connect</h2>
-          <p className='tracking-wide text-xs mt-2'>I'm currently looking for new opportunities, my inbox is always open.</p>
-          <p className='tracking-wide text-xs'>Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
-        </div>
-        <span className='font-bold text-xs'>steve.braco@gmail.com</span>
-        </div>
-          <div className="flex space-x-2 mt-5">
-          <Link href='https://github.com/stevebraco'>
-          <Image src='/assets/github.png' width={24} height={24} alt="github" />
-        </Link>
-        <Link href='https://www.linkedin.com/in/stevebraco/'>
-          <Image src='/assets/linkedin.png' width={24} height={24} alt="github" />
-        </Link>
-          </div>
-      </section>
+      <Connect />
     </main >
   );
 }
