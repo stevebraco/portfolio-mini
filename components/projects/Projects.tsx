@@ -18,7 +18,7 @@ const Projects = ({ data }: { data: any }) => {
           <p className='text-xs_tracking-w'>{data.description}</p>
         </div>
         <div className='flex flex-wrap gap-1 mt-2'>
-          {data.stack.map(s => <Badge key={data.id} variant="outline">{s}</Badge>)}
+          {data.stack.map((s: any) => <Badge key={data.id} variant="outline">{s}</Badge>)}
         </div>
       </div>
       <div className='h-[300px]'>
