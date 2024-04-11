@@ -50,15 +50,15 @@ export default function Home() {
                       <Link className='text-xs text-gray-500' href={data.code}>Code</Link>
                     </div>
                   </div>
-                  <div className='max-w-[400px] text-xs tracking-wide mt-3'>
+                  <div className='sm:max-w-[400px] text-xs tracking-wide mt-3'>
                     <p className='tracking-wide'>{data.description}</p>
                   </div>
                   <div className='flex flex-wrap gap-1 mt-2'>
                     {data.stack.map(s => <Badge key={data.id} variant="outline">{s}</Badge>)}
                   </div>
                 </div>
-                <div className='w-[300px]'>
-                  <Image src={data.img} width={300} height={300} alt={data.name} style={{ objectFit: "cover" }} />
+                <div className='h-[300px]'>
+                  <Image src={data.img} width={300} height={300} alt={data.name} style={{ objectFit: "cover", width: '100%' }} />
                 </div>
               </div>
             </CarouselItem>
