@@ -5,7 +5,7 @@ import { Badge } from '../ui/badge'
 
 const Projects = ({ data }: { data: any }) => {
   return (
-    <div className='flex-column sm:flex-row space-y-5 gap-2 lg:items-center justify-between mt-5'>
+    <div className='flex-column sm:flex-row space-y-5 gap-2 justify-between mt-5'>
       <div>
         <div>
           <h3 className='font-bold'>{data.name}</h3>

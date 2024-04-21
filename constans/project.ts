@@ -47,7 +47,7 @@ export const dataProject = [
   {
     id: 7,
     name: 'To Do App',
-    description: "I've created a ToDoList application that offers a comprehensive set of features.Users can easily list their todos, providing a clear overview of tasks to accomplish.The application allows seamless modification of todo statuses, enabling users to track their progress effectively.Moreover, users can conveniently click on any todo to delve deeper and access additional details, facilitating better task management and organization.Additionally, the application facilitates the effortless addition of new todos, ensuring users can quickly capture new tasks as they arise.Overall, it's a user-friendly and efficient tool for managing tasks and staying organized.",
+    description: "I've developed a ToDoList app with a full range of features. Users can easily list and track their tasks, access additional details for better management, and quickly add new tasks. In summary, it's a user-friendly and efficient tool for staying organized.",
     img: '/assets/todo.png',
     site: 'https://stevebraco.github.io/testTechniqueSogeti/',
     code: 'https://github.com/stevebraco/testTechniqueSogeti/tree/main',
@@ -62,5 +62,5 @@ export const dataProject = [
     code: 'https://github.com/stevebraco/dinner-restaurant',
     stack: ['Html', 'CSS', 'JavaScript']
   },
-  
+
 ]
