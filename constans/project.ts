@@ -62,4 +62,5 @@ export const dataProject = [
     code: 'https://github.com/stevebraco/dinner-restaurant',
     stack: ['Html', 'CSS', 'JavaScript']
   },
+  
 ]
