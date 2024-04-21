@@ -45,9 +45,18 @@ export const dataProject = [
     stack: ['React', 'Redux', 'Sass']
   },
   {
+    id: 7,
+    name: 'To Do App',
+    description: "I've created a ToDoList application that offers a comprehensive set of features.Users can easily list their todos, providing a clear overview of tasks to accomplish.The application allows seamless modification of todo statuses, enabling users to track their progress effectively.Moreover, users can conveniently click on any todo to delve deeper and access additional details, facilitating better task management and organization.Additionally, the application facilitates the effortless addition of new todos, ensuring users can quickly capture new tasks as they arise.Overall, it's a user-friendly and efficient tool for managing tasks and staying organized.",
+    img: '/assets/todo.png',
+    site: 'https://stevebraco.github.io/testTechniqueSogeti/',
+    code: 'https://github.com/stevebraco/testTechniqueSogeti/tree/main',
+    stack: ['React', 'Redux', 'JavaScript', 'Styled-Components', 'Nodejs', 'Express']
+  },
+  {
     id: 6,
     name: 'Dine',
-    description: ' I crafted the Dine restaurant website, ensuring users see tailored content for Family Gatherings, Special Events, and Social Events tabs. I implemented error handling for the booking form: prompting "This field is required" for empty Name or Email Address fields, "Please use a valid email address" for incorrectly formatted emails, and "This field is incomplete" for empty Pick a date or Pick a time fields. The interface seamlessly adjusts to optimal layouts for different device screen sizes, while all interactive elements feature hover and focus states, enhancing user experience.',
+    description: 'I crafted the Dine restaurant website, ensuring users see tailored content for Family Gatherings, Special Events, and Social Events tabs. I implemented error handling for the booking form: prompting "This field is required" for empty Name or Email Address fields, "Please use a valid email address" for incorrectly formatted emails, and "This field is incomplete" for empty Pick a date or Pick a time fields. The interface seamlessly adjusts to optimal layouts for different device screen sizes, while all interactive elements feature hover and focus states, enhancing user experience.',
     img: '/assets/dine.webp',
     site: 'https://dinner-restaurant.vercel.app/',
     code: 'https://github.com/stevebraco/dinner-restaurant',
